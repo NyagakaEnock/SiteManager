@@ -1,0 +1,407 @@
+[Root]
+Most Recent Package=Standard Setup Package 1
+
+[Package|SITEMGR|Distribution]
+Type=single
+Size=
+Title=SITEMGR
+
+[Package|SITEMGR|IconGroups]
+Group0=SITEMGR
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|SITEMGR|SITEMGR]
+Icon1=SITEMGR.exe
+Title1=SITEMGR
+StartIn1=$(AppPath)
+Key1=Icon1
+
+
+[Package|SITEMGR|Root]
+SubWizProgID=PDWizard.DepPkgSubWiz
+BuildFolder=D:\Development\OrgProject\ODAS Hillary\SITE MANAGER
+
+[Package|SITEMGR|Configure DAO ISAMs]
+Applicable=No
+
+[Package|SITEMGR|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|SITEMGR|Files Found]
+ODAS HELP FACILITY.HLP=D:\Development\Odas\EXE\ODAS HELP FACILITY.HLP
+
+[Package|SITEMGR|Files Released]
+
+[Package|SITEMGR|Missing Dependency Information]
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\APPWIZ.OCX=
+C:\Program Files\Seagate Software\Viewers\ActiveXViewer\cselexpt.ocx=
+C:\Program Files\Business Objects\Common\3.5\bin\craxdui.dll=
+C:\Program Files\Seagate Software\Viewers\ActiveXViewer\sviewhlp.dll=
+C:\Windows\System32\cpeaut32.dll=
+C:\Program Files\Seagate Software\Report Designer Component\crystalwizard.dll=
+C:\Windows\System32\craxddt.dll=
+C:\Windows\System32\ieframe.dll=
+C:\Windows\System32\craxdrt.dll=
+C:\Program Files\Seagate Software\Viewers\ActiveXViewer\xqviewer.dll=
+C:\Program Files\Common Files\System\ado\msado25.tlb=
+
+[Package|SITEMGR|Out-of-Date Dependency Information]
+C:\Windows\System32\comct332.ocx=
+C:\Windows\System32\msstdfmt.dll=
+C:\Windows\System32\MCI32.OCX=
+C:\Windows\System32\mscomct2.ocx=
+C:\Windows\System32\MSCOMCTL.OCX=
+C:\Windows\System32\comdlg32.ocx=
+C:\Windows\System32\scrrun.dll=
+
+[Package|SITEMGR|Files Added]
+
+[Package|SITEMGR|Files Removed]
+c:\program files\business objects\common\3.5\bin\craxdui.dll=
+
+[Package|SITEMGR|Files In Project]
+D:\Development\OrgProject\ODAS Hillary\SITE MANAGER\SITEMGR.exe=Yes
+C:\Windows\System32\msvbvm60.dll=Yes
+C:\Windows\System32\oleaut32.dll=Yes
+C:\Windows\System32\olepro32.dll=Yes
+C:\Windows\System32\asycfilt.dll=Yes
+C:\Windows\System32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Common Files\System\ado\msado25.tlb=Yes
+C:\Program Files\Seagate Software\Viewers\ActiveXViewer\xqviewer.dll=Yes
+C:\Program Files\Seagate Software\Viewers\ActiveXViewer\crviewer.dll=Yes
+C:\Windows\System32\craxdrt.dll=Yes
+C:\Windows\System32\ieframe.dll=Yes
+C:\Windows\System32\craxddt.dll=Yes
+C:\Program Files\Seagate Software\Report Designer Component\crystalwizard.dll=Yes
+C:\Windows\System32\cpeaut32.dll=Yes
+C:\Program Files\Seagate Software\Viewers\ActiveXViewer\sviewhlp.dll=Yes
+C:\Program Files\Business Objects\Common\3.5\bin\craxdui.dll=No
+C:\Windows\System32\scrrun.dll=Yes
+C:\Windows\System32\msvcrt.dll=Yes
+C:\Windows\System32\MSRDC20.OCX=Yes
+C:\Windows\System32\msrdo20.dll=Yes
+C:\Windows\System32\rdocurs.dll=Yes
+C:\Windows\System32\odbc32.dll=Yes
+C:\Windows\System32\TABCTL32.OCX=Yes
+C:\Windows\System32\MSFLXGRD.OCX=Yes
+C:\Windows\System32\comdlg32.ocx=Yes
+C:\Windows\System32\MSCOMCTL.OCX=Yes
+C:\Windows\System32\mscomct2.ocx=Yes
+C:\Windows\System32\MSINET.OCX=Yes
+C:\Windows\System32\RICHTX32.OCX=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=Yes
+C:\Windows\System32\MSCHRT20.OCX=Yes
+C:\Windows\System32\MSMAPI32.OCX=Yes
+C:\Windows\System32\MCI32.OCX=Yes
+C:\Windows\System32\PICCLP32.OCX=Yes
+C:\Windows\System32\SYSINFO.OCX=Yes
+C:\Windows\System32\MSCOMM32.OCX=Yes
+C:\Windows\System32\MSMASK32.OCX=Yes
+C:\Windows\System32\MSDATGRD.OCX=Yes
+C:\Windows\System32\msstdfmt.dll=Yes
+C:\Windows\System32\MSDATLST.OCX=Yes
+C:\Windows\System32\comct332.ocx=Yes
+C:\Windows\System32\MSADODC.OCX=Yes
+C:\Windows\System32\Crystl32.OCX=Yes
+C:\Windows\System32\crpe32.dll=Yes
+C:\Program Files\Seagate Software\Viewers\ActiveXViewer\cselexpt.ocx=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\APPWIZ.OCX=Yes
+C:\Windows\System32\COMCTL32.OCX=Yes
+C:\Program Files\Seagate Software\Report Designer Component\craxddrt.dll=Yes
+C:\Windows\System32\Implode.dll=Yes
+C:\Windows\System32\Crpaig80.dll=Yes
+C:\Windows\System32\mfc42.dll=Yes
+D:\Development\Odas\EXE\sscsdk80.dll=Yes
+D:\Development\Odas\EXE\pg32conv.dll=Yes
+C:\Windows\System32\P2smon.dll=Yes
+D:\Development\Odas\EXE\ODAS HELP FACILITY.HLP=Yes
+
+[Package|SITEMGR|Configure Registry Files]
+Applicable=
+
+[Package|SITEMGR|Configure Remote Servers]
+Applicable=
+
+[Package|SITEMGR|Install Locations]
+D:\Development\OrgProject\ODAS Hillary\SITE MANAGER\SITEMGR.exe=$(AppPath)
+C:\Windows\System32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Windows\System32\oleaut32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\olepro32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\asycfilt.dll=$(WinSysPathSysFile)
+C:\Windows\System32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Common Files\System\ado\msado25.tlb=$(WinSysPath)
+C:\Program Files\Seagate Software\Viewers\ActiveXViewer\xqviewer.dll=$(WinSysPath)
+C:\Program Files\Seagate Software\Viewers\ActiveXViewer\crviewer.dll=$(WinSysPath)
+C:\Windows\System32\craxdrt.dll=$(WinSysPath)
+C:\Windows\System32\ieframe.dll=$(WinSysPath)
+C:\Windows\System32\craxddt.dll=$(WinSysPath)
+C:\Program Files\Seagate Software\Report Designer Component\crystalwizard.dll=$(WinSysPath)
+C:\Windows\System32\cpeaut32.dll=$(WinSysPath)
+C:\Program Files\Seagate Software\Viewers\ActiveXViewer\sviewhlp.dll=$(WinSysPath)
+C:\Windows\System32\scrrun.dll=$(WinSysPath)
+C:\Windows\System32\msvcrt.dll=$(WinSysPathSysFile)
+C:\Windows\System32\MSRDC20.OCX=$(WinSysPath)
+C:\Windows\System32\msrdo20.dll=$(WinSysPath)
+C:\Windows\System32\rdocurs.dll=$(WinSysPath)
+C:\Windows\System32\odbc32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\TABCTL32.OCX=$(WinSysPath)
+C:\Windows\System32\MSFLXGRD.OCX=$(WinSysPath)
+C:\Windows\System32\comdlg32.ocx=$(WinSysPath)
+C:\Windows\System32\MSCOMCTL.OCX=$(WinSysPath)
+C:\Windows\System32\mscomct2.ocx=$(WinSysPath)
+C:\Windows\System32\MSINET.OCX=$(WinSysPath)
+C:\Windows\System32\RICHTX32.OCX=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\MSCHRT20.OCX=$(WinSysPath)
+C:\Windows\System32\MSMAPI32.OCX=$(WinSysPath)
+C:\Windows\System32\MCI32.OCX=$(WinSysPath)
+C:\Windows\System32\PICCLP32.OCX=$(WinSysPath)
+C:\Windows\System32\SYSINFO.OCX=$(WinSysPath)
+C:\Windows\System32\MSCOMM32.OCX=$(WinSysPath)
+C:\Windows\System32\MSMASK32.OCX=$(WinSysPath)
+C:\Windows\System32\MSDATGRD.OCX=$(WinSysPath)
+C:\Windows\System32\msstdfmt.dll=$(WinSysPath)
+C:\Windows\System32\MSDATLST.OCX=$(WinSysPath)
+C:\Windows\System32\comct332.ocx=$(WinSysPath)
+C:\Windows\System32\MSADODC.OCX=$(WinSysPath)
+C:\Windows\System32\Crystl32.OCX=$(WinSysPath)
+C:\Windows\System32\crpe32.dll=$(WinSysPath)
+C:\Program Files\Seagate Software\Viewers\ActiveXViewer\cselexpt.ocx=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\APPWIZ.OCX=$(WinSysPath)
+C:\Windows\System32\COMCTL32.OCX=$(WinSysPath)
+C:\Program Files\Seagate Software\Report Designer Component\craxddrt.dll=$(WinSysPath)
+C:\Windows\System32\Implode.dll=$(AppPath)
+C:\Windows\System32\Crpaig80.dll=$(WinSysPath)
+C:\Windows\System32\mfc42.dll=$(WinSysPath)
+D:\Development\Odas\EXE\sscsdk80.dll=$(WinSysPath)
+D:\Development\Odas\EXE\pg32conv.dll=$(AppPath)
+C:\Windows\System32\P2smon.dll=$(WinSysPath)
+D:\Development\Odas\EXE\ODAS HELP FACILITY.HLP=$(AppPath)
+
+[Package|SITEMGR|Configure Shared Files]
+Applicable=
+
+[Package|SITEMGR|DepFile]
+DepCabFile=SITEMGR.CAB
+DepCabRun=SITEMGR.INF
+
+[Package|SITEMGR|Package]
+PackageFolder=D:\Development\OrgProject\ODAS Hillary\SITE MANAGER
+ProjectFolder=D:\Development\OrgProject\ODAS Hillary\SITE MANAGER
+ServerSideCab=
+File1=D:\Development\OrgProject\ODAS Hillary\SITE MANAGER\SITEMGR.DEP
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Package|Standard Setup Package 1|Distribution]
+Type=single
+Size=
+Title=SITEMGR
+
+[Package|Standard Setup Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=D:\Development\OrgProject\ODAS Hillary\SITE MANAGER
+
+[Package|Standard Setup Package 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 1|Files Found]
+ODAS HELP FACILITY.HLP=D:\Development\Odas\EXE\ODAS HELP FACILITY.HLP
+
+[Package|Standard Setup Package 1|Files Released]
+
+[Package|Standard Setup Package 1|Missing Dependency Information]
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\APPWIZ.OCX=
+C:\Program Files\Seagate Software\Viewers\ActiveXViewer\cselexpt.ocx=
+C:\Program Files\Business Objects\Common\3.5\bin\craxdui.dll=
+C:\Program Files\Seagate Software\Viewers\ActiveXViewer\sviewhlp.dll=
+C:\Windows\System32\cpeaut32.dll=
+C:\Program Files\Seagate Software\Report Designer Component\crystalwizard.dll=
+C:\Windows\System32\craxddt.dll=
+C:\Windows\System32\ieframe.dll=
+C:\Windows\System32\craxdrt.dll=
+C:\Program Files\Seagate Software\Viewers\ActiveXViewer\xqviewer.dll=
+C:\Program Files\Common Files\System\ado\msado25.tlb=
+
+[Package|Standard Setup Package 1|Out-of-Date Dependency Information]
+C:\Windows\System32\comct332.ocx=
+C:\Windows\System32\msstdfmt.dll=
+C:\Windows\System32\MCI32.OCX=
+C:\Windows\System32\mscomct2.ocx=
+C:\Windows\System32\MSCOMCTL.OCX=
+C:\Windows\System32\comdlg32.ocx=
+C:\Windows\System32\scrrun.dll=
+
+[Package|Standard Setup Package 1|Files Added]
+
+[Package|Standard Setup Package 1|Files Removed]
+c:\program files\business objects\common\3.5\bin\craxdui.dll=
+
+[Package|Standard Setup Package 1|Files In Project]
+D:\Development\OrgProject\ODAS Hillary\SITE MANAGER\SITEMGR.exe=Yes
+C:\Windows\System32\msvbvm60.dll=Yes
+C:\Windows\System32\oleaut32.dll=Yes
+C:\Windows\System32\olepro32.dll=Yes
+C:\Windows\System32\asycfilt.dll=Yes
+C:\Windows\System32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Common Files\System\ado\msado25.tlb=Yes
+C:\Program Files\Seagate Software\Viewers\ActiveXViewer\xqviewer.dll=Yes
+C:\Program Files\Seagate Software\Viewers\ActiveXViewer\crviewer.dll=Yes
+C:\Windows\System32\craxdrt.dll=Yes
+C:\Windows\System32\ieframe.dll=Yes
+C:\Windows\System32\craxddt.dll=Yes
+C:\Program Files\Seagate Software\Report Designer Component\crystalwizard.dll=Yes
+C:\Windows\System32\cpeaut32.dll=Yes
+C:\Program Files\Seagate Software\Viewers\ActiveXViewer\sviewhlp.dll=Yes
+C:\Program Files\Business Objects\Common\3.5\bin\craxdui.dll=No
+C:\Windows\System32\scrrun.dll=Yes
+C:\Windows\System32\msvcrt.dll=Yes
+C:\Windows\System32\MSRDC20.OCX=Yes
+C:\Windows\System32\msrdo20.dll=Yes
+C:\Windows\System32\rdocurs.dll=Yes
+C:\Windows\System32\TABCTL32.OCX=Yes
+C:\Windows\System32\MSFLXGRD.OCX=Yes
+C:\Windows\System32\comdlg32.ocx=Yes
+C:\Windows\System32\MSCOMCTL.OCX=Yes
+C:\Windows\System32\mscomct2.ocx=Yes
+C:\Windows\System32\MSINET.OCX=Yes
+C:\Windows\System32\RICHTX32.OCX=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=Yes
+C:\Windows\System32\MSCHRT20.OCX=Yes
+C:\Windows\System32\MSMAPI32.OCX=Yes
+C:\Windows\System32\MCI32.OCX=Yes
+C:\Windows\System32\PICCLP32.OCX=Yes
+C:\Windows\System32\SYSINFO.OCX=Yes
+C:\Windows\System32\MSCOMM32.OCX=Yes
+C:\Windows\System32\MSMASK32.OCX=Yes
+C:\Windows\System32\MSDATGRD.OCX=Yes
+C:\Windows\System32\msstdfmt.dll=Yes
+C:\Windows\System32\MSDATLST.OCX=Yes
+C:\Windows\System32\comct332.ocx=Yes
+C:\Windows\System32\MSADODC.OCX=Yes
+C:\Windows\System32\Crystl32.OCX=Yes
+C:\Windows\System32\crpe32.dll=Yes
+C:\Program Files\Seagate Software\Viewers\ActiveXViewer\cselexpt.ocx=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\APPWIZ.OCX=Yes
+C:\Windows\System32\COMCTL32.OCX=Yes
+C:\Program Files\Seagate Software\Report Designer Component\craxddrt.dll=Yes
+C:\Windows\System32\Implode.dll=Yes
+C:\Windows\System32\Crpaig80.dll=Yes
+C:\Windows\System32\mfc42.dll=Yes
+D:\Development\Odas\EXE\sscsdk80.dll=Yes
+D:\Development\Odas\EXE\pg32conv.dll=Yes
+C:\Windows\System32\P2smon.dll=Yes
+D:\Development\Odas\EXE\ODAS HELP FACILITY.HLP=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Windows\System32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Standard Setup Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 1|Install Locations]
+D:\Development\OrgProject\ODAS Hillary\SITE MANAGER\SITEMGR.exe=$(AppPath)
+C:\Windows\System32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Windows\System32\oleaut32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\olepro32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\asycfilt.dll=$(WinSysPathSysFile)
+C:\Windows\System32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Common Files\System\ado\msado25.tlb=$(WinSysPath)
+C:\Program Files\Seagate Software\Viewers\ActiveXViewer\xqviewer.dll=$(WinSysPath)
+C:\Program Files\Seagate Software\Viewers\ActiveXViewer\crviewer.dll=$(WinSysPath)
+C:\Windows\System32\craxdrt.dll=$(WinSysPath)
+C:\Windows\System32\ieframe.dll=$(WinSysPath)
+C:\Windows\System32\craxddt.dll=$(WinSysPath)
+C:\Program Files\Seagate Software\Report Designer Component\crystalwizard.dll=$(WinSysPath)
+C:\Windows\System32\cpeaut32.dll=$(WinSysPath)
+C:\Program Files\Seagate Software\Viewers\ActiveXViewer\sviewhlp.dll=$(WinSysPath)
+C:\Windows\System32\scrrun.dll=$(WinSysPath)
+C:\Windows\System32\msvcrt.dll=$(WinSysPathSysFile)
+C:\Windows\System32\MSRDC20.OCX=$(WinSysPath)
+C:\Windows\System32\msrdo20.dll=$(WinSysPath)
+C:\Windows\System32\rdocurs.dll=$(WinSysPath)
+C:\Windows\System32\odbc32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\TABCTL32.OCX=$(WinSysPath)
+C:\Windows\System32\MSFLXGRD.OCX=$(WinSysPath)
+C:\Windows\System32\comdlg32.ocx=$(WinSysPath)
+C:\Windows\System32\MSCOMCTL.OCX=$(WinSysPath)
+C:\Windows\System32\mscomct2.ocx=$(WinSysPath)
+C:\Windows\System32\MSINET.OCX=$(WinSysPath)
+C:\Windows\System32\RICHTX32.OCX=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\MSCHRT20.OCX=$(WinSysPath)
+C:\Windows\System32\MSMAPI32.OCX=$(WinSysPath)
+C:\Windows\System32\MCI32.OCX=$(WinSysPath)
+C:\Windows\System32\PICCLP32.OCX=$(WinSysPath)
+C:\Windows\System32\SYSINFO.OCX=$(WinSysPath)
+C:\Windows\System32\MSCOMM32.OCX=$(WinSysPath)
+C:\Windows\System32\MSMASK32.OCX=$(WinSysPath)
+C:\Windows\System32\MSDATGRD.OCX=$(WinSysPath)
+C:\Windows\System32\msstdfmt.dll=$(WinSysPath)
+C:\Windows\System32\MSDATLST.OCX=$(WinSysPath)
+C:\Windows\System32\comct332.ocx=$(WinSysPath)
+C:\Windows\System32\MSADODC.OCX=$(WinSysPath)
+C:\Windows\System32\Crystl32.OCX=$(WinSysPath)
+C:\Windows\System32\crpe32.dll=$(WinSysPath)
+C:\Program Files\Seagate Software\Viewers\ActiveXViewer\cselexpt.ocx=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\APPWIZ.OCX=$(WinSysPath)
+C:\Windows\System32\COMCTL32.OCX=$(WinSysPath)
+C:\Program Files\Seagate Software\Report Designer Component\craxddrt.dll=$(WinSysPath)
+C:\Windows\System32\Implode.dll=$(AppPath)
+C:\Windows\System32\Crpaig80.dll=$(WinSysPath)
+C:\Windows\System32\mfc42.dll=$(WinSysPath)
+D:\Development\Odas\EXE\sscsdk80.dll=$(WinSysPath)
+D:\Development\Odas\EXE\pg32conv.dll=$(AppPath)
+C:\Windows\System32\P2smon.dll=$(WinSysPath)
+D:\Development\Odas\EXE\ODAS HELP FACILITY.HLP=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Windows\System32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Standard Setup Package 1|Configure Shared Files]
+Applicable=Yes
+D:\Development\OrgProject\ODAS Hillary\SITE MANAGER\SITEMGR.exe=No
+C:\Windows\System32\Implode.dll=No
+D:\Development\Odas\EXE\pg32conv.dll=No
+D:\Development\Odas\EXE\ODAS HELP FACILITY.HLP=No
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+
+[Package|Standard Setup Package 1|DepFile]
+DepCabFile=SITEMGR.CAB
+DepCabRun=SITEMGR.INF
+
+[Package|Standard Setup Package 1|Package]
+PackageFolder=D:\Development\OrgProject\ODAS Hillary\SITE MANAGER
+ProjectFolder=D:\Development\OrgProject\ODAS Hillary\SITE MANAGER
+ServerSideCab=
+File1=D:\Development\OrgProject\ODAS Hillary\SITE MANAGER\SITEMGR.DEP
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Package|Standard Setup Package 1|IconGroups]
+Group0=SITEMGR
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 1|SITEMGR]
+Icon1=SITEMGR.exe
+Title1=SITEMGR
+StartIn1=$(AppPath)
+Key1=Icon1

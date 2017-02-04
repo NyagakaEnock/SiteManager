@@ -1,0 +1,20 @@
+[SCC]
+SCC=This is a source code control file
+[SYSMAN.vbp]
+SCC_Project_Name=this project is not under source code control
+SCC_Aux_Path=<This is an empty string for the mssccprj.scc file>
+[SYSMANAGER.vbp]
+SCC_Project_Name=this project is not under source code control
+SCC_Aux_Path=<This is an empty string for the mssccprj.scc file>
+[FOMANAGER.vbp]
+SCC_Project_Name=this project is not under source code control
+SCC_Aux_Path=<This is an empty string for the mssccprj.scc file>
+[Project1.vbp]
+SCC_Project_Name=this project is not under source code control
+SCC_Aux_Path=<This is an empty string for the mssccprj.scc file>
+[FOMGR.vbp]
+SCC_Project_Name=this project is not under source code control
+SCC_Aux_Path=<This is an empty string for the mssccprj.scc file>
+[FOFFICE.vbp]
+SCC_Project_Name=this project is not under source code control
+SCC_Aux_Path=<This is an empty string for the mssccprj.scc file>

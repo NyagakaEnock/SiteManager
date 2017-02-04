@@ -1,0 +1,5 @@
+Line 450: Class MSComCtl2.UpDown of control UpDownLeasePeriod was not a loaded control class.
+Line 463: Class MSComCtl2.DTPicker of control DTPickerAcquisitionDate was not a loaded control class.
+Line 475: Class MSComCtl2.DTPicker of control DTPickerCommencementDate was not a loaded control class.
+Line 2176: Class MSComCtl2.DTPicker of control DTPickerPropertyCommencementDate was not a loaded control class.
+Line 2197: Class MSComCtl2.DTPicker of control DTPickerPropertyDateAssigned was not a loaded control class.

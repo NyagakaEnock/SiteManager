@@ -1,0 +1,689 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0498A5C4-D320-460B-8391-DD8B2D122404}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Site_Manager</RootNamespace>
+    <AssemblyName>Site Manager</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssignProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignProperties.Designer.cs">
+      <DependentUpon>AssignProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="encrption.cs" />
+    <Compile Include="frmabout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmabout.Designer.cs">
+      <DependentUpon>frmabout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgreementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgreementForm.Designer.cs">
+      <DependentUpon>frmAgreementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAllSites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAllSites.Designer.cs">
+      <DependentUpon>frmAllSites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCouncilRates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCouncilRates.Designer.cs">
+      <DependentUpon>frmCouncilRates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFreeAssignedSites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFreeAssignedSites.Designer.cs">
+      <DependentUpon>frmFreeAssignedSites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFreeBillboards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFreeBillboards.Designer.cs">
+      <DependentUpon>frmFreeBillboards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLandLord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLandLord.Designer.cs">
+      <DependentUpon>frmLandLord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLandlordlisting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLandlordlisting.Designer.cs">
+      <DependentUpon>frmLandlordlisting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLease.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLease.Designer.cs">
+      <DependentUpon>frmLease.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmODASMContractTermination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmODASMContractTermination.Designer.cs">
+      <DependentUpon>frmODASMContractTermination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmODASSearchPaidSites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmODASSearchPaidSites.Designer.cs">
+      <DependentUpon>frmODASSearchPaidSites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmODASSearchSitesNotPaid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmODASSearchSitesNotPaid.Designer.cs">
+      <DependentUpon>frmODASSearchSitesNotPaid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmODASSitesToExpire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmODASSitesToExpire.Designer.cs">
+      <DependentUpon>frmODASSitesToExpire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaymentConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaymentConfirmation.Designer.cs">
+      <DependentUpon>frmPaymentConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPlotAllocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlotAllocation.Designer.cs">
+      <DependentUpon>frmPlotAllocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptODASAllFreeSites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptODASAllFreeSites.Designer.cs">
+      <DependentUpon>frmRptODASAllFreeSites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptODASAllRoadSites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptODASAllRoadSites.Designer.cs">
+      <DependentUpon>frmRptODASAllRoadSites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptODASAllSitesBasedOnDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptODASAllSitesBasedOnDate.Designer.cs">
+      <DependentUpon>frmRptODASAllSitesBasedOnDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRStatement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRStatement.Designer.cs">
+      <DependentUpon>frmRStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchLandlord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchLandlord.Designer.cs">
+      <DependentUpon>frmSearchLandlord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchSite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchSite.Designer.cs">
+      <DependentUpon>frmSearchSite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSite Acquisition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSite Acquisition.Designer.cs">
+      <DependentUpon>frmSite Acquisition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSitesReportGroupedByCouncils.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSitesReportGroupedByCouncils.Designer.cs">
+      <DependentUpon>frmSitesReportGroupedByCouncils.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdatePaymentFlag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdatePaymentFlag.Designer.cs">
+      <DependentUpon>frmUpdatePaymentFlag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUSelectDateRange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUSelectDateRange.Designer.cs">
+      <DependentUpon>frmUSelectDateRange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUVouchersPrepared.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUVouchersPrepared.Designer.cs">
+      <DependentUpon>frmUVouchersPrepared.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVoucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVoucher.Designer.cs">
+      <DependentUpon>frmVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVoucherPrepare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVoucherPrepare.Designer.cs">
+      <DependentUpon>frmVoucherPrepare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralVar.cs" />
+    <Compile Include="listViews.cs" />
+    <Compile Include="ODASRentPaymentInstallments.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ODASRentPaymentInstallments.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ODASRLandLords.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ODASRLandLords.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ODASRPlotAllocations.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ODASRPlotAllocations.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="publicFunc.cs" />
+    <Compile Include="rptContractAgreement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptContractAgreement.Designer.cs">
+      <DependentUpon>rptContractAgreement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptCouncilRates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptCouncilRates.Designer.cs">
+      <DependentUpon>rptCouncilRates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptODASAgreementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptODASAgreementForm.Designer.cs">
+      <DependentUpon>rptODASAgreementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptODASAgreementSchedule.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptODASAgreementSchedule.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptODASAllFreeSites1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptODASAllFreeSites1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptODASAllRoadSites.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptODASAllRoadSites.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptODASAllSites.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptODASAllSites.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptODASAllSitesBasedOnDate.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptODASAllSitesBasedOnDate.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptODASLandlordContract1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptODASLandlordContract1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptODASPPlotSites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptODASPPlotSites.Designer.cs">
+      <DependentUpon>rptODASPPlotSites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptODASRentDue.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptODASRentDue.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptODASRentpaid.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptODASRentpaid.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptODASRentPaymentInstallment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptODASRentPaymentInstallment.Designer.cs">
+      <DependentUpon>rptODASRentPaymentInstallment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptODASRRatesSchedule.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptODASRRatesSchedule.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptODASRRentPayments.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptODASRRentPayments.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptODASSitesToExpire.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptODASSitesToExpire.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptPlotSites.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPlotSites.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptPlotSites2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptPlotSites2.Designer.cs">
+      <DependentUpon>rptPlotSites2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptRentDue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptRentDue.Designer.cs">
+      <DependentUpon>rptRentDue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptSitesReportGroupedByCouncils.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSitesReportGroupedByCouncils.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptStatement.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptStatement.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptVoucher.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptVoucher.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sites to Expire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sites to Expire.Designer.cs">
+      <DependentUpon>Sites to Expire.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AssignProperties.resx">
+      <DependentUpon>AssignProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmabout.resx">
+      <DependentUpon>frmabout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgreementForm.resx">
+      <DependentUpon>frmAgreementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAllSites.resx">
+      <DependentUpon>frmAllSites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCouncilRates.resx">
+      <DependentUpon>frmCouncilRates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFreeAssignedSites.resx">
+      <DependentUpon>frmFreeAssignedSites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFreeBillboards.resx">
+      <DependentUpon>frmFreeBillboards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLandLord.resx">
+      <DependentUpon>frmLandLord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLandlordlisting.resx">
+      <DependentUpon>frmLandlordlisting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLease.resx">
+      <DependentUpon>frmLease.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmODASMContractTermination.resx">
+      <DependentUpon>frmODASMContractTermination.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmODASSearchPaidSites.resx">
+      <DependentUpon>frmODASSearchPaidSites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmODASSearchSitesNotPaid.resx">
+      <DependentUpon>frmODASSearchSitesNotPaid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmODASSitesToExpire.resx">
+      <DependentUpon>frmODASSitesToExpire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaymentConfirmation.resx">
+      <DependentUpon>frmPaymentConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlotAllocation.resx">
+      <DependentUpon>frmPlotAllocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptODASAllFreeSites.resx">
+      <DependentUpon>frmRptODASAllFreeSites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptODASAllRoadSites.resx">
+      <DependentUpon>frmRptODASAllRoadSites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptODASAllSitesBasedOnDate.resx">
+      <DependentUpon>frmRptODASAllSitesBasedOnDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRStatement.resx">
+      <DependentUpon>frmRStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchLandlord.resx">
+      <DependentUpon>frmSearchLandlord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchSite.resx">
+      <DependentUpon>frmSearchSite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSite Acquisition.resx">
+      <DependentUpon>frmSite Acquisition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSitesReportGroupedByCouncils.resx">
+      <DependentUpon>frmSitesReportGroupedByCouncils.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdatePaymentFlag.resx">
+      <DependentUpon>frmUpdatePaymentFlag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUSelectDateRange.resx">
+      <DependentUpon>frmUSelectDateRange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUVouchersPrepared.resx">
+      <DependentUpon>frmUVouchersPrepared.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVoucher.resx">
+      <DependentUpon>frmVoucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVoucherPrepare.resx">
+      <DependentUpon>frmVoucherPrepare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ODASRentPaymentInstallments.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ODASRentPaymentInstallments.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ODASRLandLords.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ODASRLandLords.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ODASRPlotAllocations.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ODASRPlotAllocations.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptContractAgreement.resx">
+      <DependentUpon>rptContractAgreement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptCouncilRates.resx">
+      <DependentUpon>rptCouncilRates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptODASAgreementForm.resx">
+      <DependentUpon>rptODASAgreementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptODASAgreementSchedule.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptODASAgreementSchedule.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptODASAllFreeSites1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptODASAllFreeSites1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptODASAllRoadSites.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptODASAllRoadSites.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptODASAllSites.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptODASAllSites.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptODASAllSitesBasedOnDate.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptODASAllSitesBasedOnDate.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptODASLandlordContract1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptODASLandlordContract1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptODASPPlotSites.resx">
+      <DependentUpon>rptODASPPlotSites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptODASRentDue.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptODASRentDue.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptODASRentpaid.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptODASRentpaid.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptODASRentPaymentInstallment.resx">
+      <DependentUpon>rptODASRentPaymentInstallment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptODASRRatesSchedule.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptODASRRatesSchedule.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptODASRRentPayments.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptODASRRentPayments.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptODASSitesToExpire.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptODASSitesToExpire.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptPlotSites.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPlotSites.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptPlotSites2.resx">
+      <DependentUpon>rptPlotSites2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptRentDue.resx">
+      <DependentUpon>rptRentDue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptSitesReportGroupedByCouncils.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSitesReportGroupedByCouncils.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptStatement.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptStatement.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptVoucher.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptVoucher.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sites to Expire.resx">
+      <DependentUpon>Sites to Expire.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Images\icons\Exam Logo 1" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icons\Home alt.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icons\Money.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icons\DRAG1PG.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icons\Student.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icons\Dollar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icons\Logout.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icons\Icons\icons 48x48\SAVE.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icons\Icons\icons 48x48\Edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\exclam.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\qmark.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icons\New.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icons\PRINT.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icons\Search.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\search.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

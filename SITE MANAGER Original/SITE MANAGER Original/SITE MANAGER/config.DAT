@@ -1,0 +1,5 @@
+Database:=ODASPLAN
+server:=\SQLEXPRESS2005
+Dsn:=ODAS
+uid:=sa
+pwd:=administrator$

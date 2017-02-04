@@ -1,0 +1,132 @@
+[Root]
+Most Recent Package=Standard Setup Package 1
+
+[Package|Standard Setup Package 1|SYSMANAGER]
+Icon1=FOFFICE.exe
+Title1=SYSMANAGER
+StartIn1=$(AppPath)
+Key1=Icon1
+
+
+[Package|Standard Setup Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=E:\Unzipped\Odas\FRONT OFFICE
+
+[Package|Standard Setup Package 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 1|Files Found]
+
+[Package|Standard Setup Package 1|Files Released]
+ODAS HELP FACILITY.HLP=
+
+[Package|Standard Setup Package 1|Missing Dependency Information]
+C:\WINNT\system32\craxddt.dll=
+C:\WINNT\system32\craxdrt.dll=
+C:\WINNT\system32\crviewer.dll=
+C:\Program Files\Common Files\System\ado\msado21.tlb=
+C:\Program Files\Microsoft SQL Server\80\Tools\Binn\Resources\1033\sqlns.rll=
+
+[Package|Standard Setup Package 1|Out-of-Date Dependency Information]
+C:\WINNT\system32\msstdfmt.dll=
+C:\WINNT\system32\mscomct2.ocx=
+C:\WINNT\system32\Comdlg32.ocx=
+C:\WINNT\system32\comctl32.ocx=
+C:\WINNT\system32\Mscomctl.ocx=
+
+[Package|Standard Setup Package 1|Files Added]
+
+[Package|Standard Setup Package 1|Files Removed]
+
+[Package|Standard Setup Package 1|Files In Project]
+E:\Unzipped\Odas\Central\FOFFICE.exe=Yes
+C:\WINNT\system32\msvbvm60.dll=Yes
+C:\WINNT\system32\oleaut32.dll=Yes
+C:\WINNT\system32\olepro32.dll=Yes
+C:\WINNT\system32\asycfilt.dll=Yes
+C:\WINNT\system32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Microsoft SQL Server\80\Tools\Binn\Resources\1033\sqlns.rll=Yes
+C:\Program Files\Common Files\System\ado\msado21.tlb=Yes
+C:\Program Files\Common Files\System\ado\msador15.dll=Yes
+C:\WINNT\system32\crviewer.dll=Yes
+C:\WINNT\system32\Mscomctl.ocx=Yes
+C:\WINNT\system32\comctl32.ocx=Yes
+C:\WINNT\system32\Comdlg32.ocx=Yes
+C:\WINNT\system32\mscomct2.ocx=Yes
+C:\WINNT\system32\TABCTL32.OCX=Yes
+C:\WINNT\system32\MSDATGRD.OCX=Yes
+C:\WINNT\system32\msstdfmt.dll=Yes
+C:\WINNT\system32\craxdrt.dll=Yes
+C:\WINNT\system32\craxddt.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINNT\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Standard Setup Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 1|Install Locations]
+E:\Unzipped\Odas\Central\FOFFICE.exe=$(AppPath)
+C:\WINNT\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft SQL Server\80\Tools\Binn\Resources\1033\sqlns.rll=$(AppPath)
+C:\Program Files\Common Files\System\ado\msado21.tlb=$(WinSysPath)
+C:\Program Files\Common Files\System\ado\msador15.dll=$(CommonFilesSys)\ADO
+C:\WINNT\system32\crviewer.dll=$(WinSysPath)
+C:\WINNT\system32\Mscomctl.ocx=$(WinSysPath)
+C:\WINNT\system32\comctl32.ocx=$(WinSysPath)
+C:\WINNT\system32\Comdlg32.ocx=$(WinSysPath)
+C:\WINNT\system32\mscomct2.ocx=$(WinSysPath)
+C:\WINNT\system32\TABCTL32.OCX=$(WinSysPath)
+C:\WINNT\system32\MSDATGRD.OCX=$(WinSysPath)
+C:\WINNT\system32\msstdfmt.dll=$(WinSysPath)
+C:\WINNT\system32\craxdrt.dll=$(WinSysPath)
+C:\WINNT\system32\craxddt.dll=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Standard Setup Package 1|Configure Shared Files]
+Applicable=Yes
+E:\Unzipped\Odas\Central\FOFFICE.exe=No
+C:\Program Files\Microsoft SQL Server\80\Tools\Binn\Resources\1033\sqlns.rll=No
+
+[Package|Standard Setup Package 1|Distribution]
+Type=single
+Size=
+Title=FRONT OFFICE
+
+[Package|Standard Setup Package 1|IconGroups]
+Group0=FRONT OFFICE
+PrivateGroup0=False
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 1|FRONT OFFICE]
+Icon1=FOFFICE.exe
+Title1=FRONT OFFICE
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 1|Package]
+PackageFolder=E:\Unzipped\Odas\FRONT OFFICE
+ProjectFolder=E:\Unzipped\Odas\FRONT OFFICE
+ServerSideCab=
+File1=E:\Unzipped\Odas\FRONT OFFICE\setup.exe
+File2=E:\Unzipped\Odas\FRONT OFFICE\Setup.Lst
+File3=E:\Unzipped\Odas\FRONT OFFICE\FOFFICE.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

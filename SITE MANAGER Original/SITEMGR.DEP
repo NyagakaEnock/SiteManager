@@ -1,0 +1,110 @@
+[Version]
+Version=1.0.0.0
+
+[SITEMGR.exe <0009>]
+Dest=$(AppPath)
+Date=6/16/2012
+Time=19:23
+Version=1.0.0.0
+CABFilename=SITEMGR.CAB
+CABINFFile=SITEMGR.INF
+Uses1=msvbvm60.dll
+Uses2=oleaut32.dll
+Uses3=olepro32.dll
+Uses4=asycfilt.dll
+Uses5=stdole2.tlb
+Uses6=COMCAT.DLL
+Uses7=msado25.tlb
+Uses8=xqviewer.dll
+Uses9=crviewer.dll
+Uses10=ieframe.dll
+Uses11=craxddt.dll
+Uses12=crystalwizard.dll
+Uses13=cpeaut32.dll
+Uses14=sviewhlp.dll
+Uses15=scrrun.dll
+Uses16=MSRDC20.OCX
+Uses17=TABCTL32.OCX
+Uses18=MSFLXGRD.OCX
+Uses19=comdlg32.ocx
+Uses20=MSCOMCTL.OCX
+Uses21=mscomct2.ocx
+Uses22=MSINET.OCX
+Uses23=RICHTX32.OCX
+Uses24=MSCHRT20.OCX
+Uses25=MSMAPI32.OCX
+Uses26=MCI32.OCX
+Uses27=PICCLP32.OCX
+Uses28=SYSINFO.OCX
+Uses29=MSCOMM32.OCX
+Uses30=MSMASK32.OCX
+Uses31=MSDATGRD.OCX
+Uses32=MSDATLST.OCX
+Uses33=comct332.ocx
+Uses34=MSADODC.OCX
+Uses35=Crystl32.OCX
+Uses36=cselexpt.ocx
+Uses37=APPWIZ.OCX
+Uses38=COMCTL32.OCX
+Uses39=craxddrt.dll
+Uses40=ODAS HELP FACILITY.HLP
+
+[msado25.tlb <0009>]
+Dest=$(WinSysPath)
+Date=7/14/2009
+Time=03:11
+Version=6.1.7600.16385
+
+[xqviewer.dll <0009>]
+Dest=$(WinSysPath)
+Date=2/3/2001
+Time=12:00
+Version=8.5.0.29
+
+[craxdrt.dll <0009>]
+Dest=$(WinSysPath)
+Date=6/5/2000
+Time=09:50
+Version=8.0.0.441
+
+[ieframe.dll <0009>]
+Dest=$(WinSysPath)
+Date=7/14/2009
+Time=04:15
+Version=8.0.7600.16385
+
+[craxddt.dll <0009>]
+Dest=$(WinSysPath)
+Date=6/5/2000
+Time=20:50
+Version=8.0.0.441
+
+[crystalwizard.dll <0009>]
+Dest=$(WinSysPath)
+Date=1/20/2001
+Time=06:28
+Version=8.5.0.4
+
+[cpeaut32.dll <0009>]
+Dest=$(WinSysPath)
+Date=11/8/2000
+Time=14:46
+Version=8.5.0.9
+
+[sviewhlp.dll <0009>]
+Dest=$(WinSysPath)
+Date=2/3/2001
+Time=12:06
+Version=8.5.0.217
+
+[cselexpt.ocx <0009>]
+Dest=$(WinSysPath)
+Date=2/3/2001
+Time=12:00
+Version=8.5.0.35
+
+[APPWIZ.OCX <0009>]
+Dest=$(WinSysPath)
+Date=6/24/1998
+Time=11:00
+Version=6.0.0.8177

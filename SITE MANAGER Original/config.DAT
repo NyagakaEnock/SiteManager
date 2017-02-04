@@ -1,0 +1,5 @@
+Database:=ODASPLAN
+server:=FORTUNEMAIN\SQLEXPRESS
+Dsn:=ODAS
+uid:=sa
+pwd:=administrator$

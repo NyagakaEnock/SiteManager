@@ -1,0 +1,14 @@
+Line 59: Class MSComCtl2.DTPicker of control txtStartDate was not a loaded control class.
+Line 81: Class MSComCtl2.DTPicker of control txtLastDate was not a loaded control class.
+Line 65: The property name _ExtentX in txtStartDate is invalid.
+Line 66: The property name _ExtentY in txtStartDate is invalid.
+Line 67: The property name _Version in txtStartDate is invalid.
+Line 77: The property name CustomFormat in txtStartDate is invalid.
+Line 78: The property name Format in txtStartDate is invalid.
+Line 79: The property name CurrentDate in txtStartDate is invalid.
+Line 87: The property name _ExtentX in txtLastDate is invalid.
+Line 88: The property name _ExtentY in txtLastDate is invalid.
+Line 89: The property name _Version in txtLastDate is invalid.
+Line 99: The property name CustomFormat in txtLastDate is invalid.
+Line 100: The property name Format in txtLastDate is invalid.
+Line 101: The property name CurrentDate in txtLastDate is invalid.
